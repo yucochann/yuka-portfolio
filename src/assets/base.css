@@ -1,5 +1,11 @@
 * {
-  /* background-color: rgb(219 234 254); */
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: '源泉圓體丹', 'Noto Sans TC', sans-serif;
+  color: #388bde;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-image: url(@/assets/image/background-image.jpg);
 }
