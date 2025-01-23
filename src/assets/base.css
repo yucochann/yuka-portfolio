@@ -9,3 +9,38 @@ body {
   background-repeat: repeat-y;
   background-image: url(@/assets/image/background-image.jpg);
 }
+.highlight {
+  padding: 0.15em 0;
+  background-image: linear-gradient(0deg, #63e27888 0.5em, transparent 0.5em);
+}
+.underline-wave {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #51ca65;
+  text-decoration-style: wavy;
+}
+
+@layer base {
+  button {
+    @apply bg-button-default text-white hover:bg-button-hover transition-all transform hover:scale-105 duration-300;
+  }
+}
+@layer utilities {
+  .text-with-rect {
+    position: relative;
+    padding-left: 1.25rem;
+  }
+
+  .text-with-rect::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.5rem;
+    height: 2rem;
+    background-color: #4a90e2;
+  }
+}
