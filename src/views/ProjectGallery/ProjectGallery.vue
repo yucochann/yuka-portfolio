@@ -36,9 +36,11 @@
             <p class="text-md lg:text-xl lg:tracking-wider">
               提供用戶發起和加入團體活動的功能。當使用者有興趣參與某項活動但無法找到夥伴時，可以在平台上開設揪團活動並與其他人組團。
             </p>
-            <button class="w-1/3 h-10 bg-button rounded-md text-white">
-              瞭解更多
-            </button>
+            <RouterLink to="/project/joitogether">
+              <button class="w-1/3 h-10 bg-button rounded-md text-white">
+                瞭解更多
+              </button>
+            </RouterLink>
           </div>
         </div>
       </div>
@@ -59,9 +61,11 @@
               adipisci itaque a neque nesciunt quibusdam, magnam obcaecati,
               expedita unde dolore. Eveniet dolorum tenetur incidunt.
             </p>
-            <button class="w-1/3 h-10 bg-button rounded-md text-white">
-              瞭解更多
-            </button>
+            <RouterLink to="/project/picturing">
+              <button class="w-1/3 h-10 bg-button rounded-md text-white">
+                瞭解更多
+              </button>
+            </RouterLink>
           </div>
         </div>
       </div>

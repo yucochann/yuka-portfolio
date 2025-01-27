@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
 <template>
   <section class="w-full flex flex-col gap-10">
     <div class="lg:flex lg:justify-center">
@@ -30,9 +32,11 @@
             應該是因為這真的三該：謝好像並不術，會比較不我可能的關係或，內容前面的自己的但他，巴靠近，沒必要可以先⋯兩種修以個現利智障也不到到他們，哦哦美國可愛認真看但他，天都完全沒的話會。剩下的講能，實的怎麼可為他了還是有我自己。
             是看到日快樂分開也知道想想，甜的。充認親卡，一覺哈為有有其這麼大⋯有出我真的就的東西，他的手去看認親卡有拍明天，都是，但又都不一我想。
           </p>
-          <button class="w-1/3 h-10 bg-button rounded-md text-white">
-            瞭解更多
-          </button>
+          <router-link to="/about">
+            <button class="w-1/3 h-10 bg-button rounded-md text-white">
+              瞭解更多
+            </button>
+          </router-link>
         </div>
       </div>
     </div>
