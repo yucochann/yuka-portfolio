@@ -30,8 +30,13 @@
         </p>
         <div class="flex flex-col md:flex-row gap-5">
           <div
-            class="w-full h-56 bg-blue-300 rounded-md md:w-1/2 lg:w-1/3"
-          ></div>
+            class="w-full h-52 bg-blue-300 rounded-md overflow-hidden shadow-md md:w-1/2 lg:w-1/3"
+          >
+            <img
+              src="https://i.imgur.com/xnnypcz.gif"
+              class="w-full h-full object-cover"
+            />
+          </div>
           <div class="flex flex-col gap-5 md:justify-between md:w-2/3">
             <p class="text-md lg:text-xl lg:tracking-wider">
               提供用戶發起和加入團體活動的功能。當使用者有興趣參與某項活動但無法找到夥伴時，可以在平台上開設揪團活動並與其他人組團。
