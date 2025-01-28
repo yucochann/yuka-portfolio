@@ -89,31 +89,34 @@ const scrollToSection = (sectionId) => {
 };
 </script>
 <template>
-  <div class="w-full px-5 flex flex-col gap-10">
+  <div class="w-full px-5 flex flex-col gap-8">
     <div class="flex flex-col gap-5">
-      <p class="text-4xl tracking-wider font-semibold">Joitogether</p>
-      <div class="w-full h-52 rounded-md overflow-hidden shadow-md">
+      <p class="text-3xl tracking-wider font-semibold">Joitogether</p>
+      <div class="w-full h-auto rounded-md overflow-hidden shadow-md">
         <img
           src="https://i.imgur.com/xnnypcz.gif"
           class="w-full h-full object-cover"
         />
       </div>
-      <div class="text-xl leading-9 tracking-wide flex flex-col gap-3">
+      <div class="leading-8 tracking-wide flex flex-col gap-3">
         <p>
-          - 提供用戶<span class="underline-wave">發起和加入活動</span
+          •提供用戶<span class="underline-wave">發起和加入活動</span
           >的揪團網站。
         </p>
         <p>
-          -
-          當使用者想找點事情打發時間但朋友都在忙，或者是沒有朋友的情況下，可以利用平台開設揪團活動並與其他人組團出遊或是聚餐。也可在此平台上認識志同道合的朋友！
+          •當使用者想找點事情打發時間但朋友都在忙，或者是沒有朋友的情況下，可以利用平台開設揪團活動並與其他人組團出遊或是聚餐，也可在此平台上認識志同道合的朋友！
         </p>
         <p>
-          - 前端使用<span class="underline-wave">Vue.js 實現動態頁面</span>
+          •前端使用<span class="underline-wave">Vue.js 實現動態頁面</span>
           ，並利用<span class="underline-wave">JavaScript 完成互動</span>
           功能，提升使用者體驗。
         </p>
       </div>
-      <button class="p-2 bg-button rounded-md text-white">前往專案</button>
+      <a href="https://joitogether.com/home">
+        <button class="w-full h-10 bg-button rounded-md text-white">
+          前往專案
+        </button>
+      </a>
     </div>
     <div class="lg:flex lg:justify-center">
       <svg
@@ -130,9 +133,9 @@ const scrollToSection = (sectionId) => {
         ></path>
       </svg>
     </div>
-    <div class="flex flex-col gap-5">
-      <p class="text-4xl tracking-wider font-semibold">專案主要功能</p>
-      <p class="text-xl">點擊文字可快速到達該區塊</p>
+    <div class="flex flex-col gap-3">
+      <p class="text-3xl tracking-wider font-semibold">專案主要功能</p>
+      <p class="">點擊文字可快速到達該區塊</p>
     </div>
     <div class="flex flex-col gap-10">
       <div class="">
@@ -142,7 +145,7 @@ const scrollToSection = (sectionId) => {
             v-for="item in items"
             :key="item.id"
             @click="scrollToSection(item.target)"
-            class="bg-blue-300 text-white text-center font-bold py-4 rounded-lg cursor-pointer hover:bg-blue-400 transition"
+            class="bg-blue-300 text-white text-center font-bold p-2 rounded-lg cursor-pointer hover:bg-blue-400 transition"
           >
             {{ item.name }}
           </div>
@@ -173,7 +176,7 @@ const scrollToSection = (sectionId) => {
           <!-- 標題與描述 -->
 
           <p class="text-with-rect">
-            <span class="opacity-70 font-semibold tracking-wider text-3xl">{{
+            <span class="opacity-70 font-semibold tracking-wider text-2xl">{{
               section.title
             }}</span>
           </p>
@@ -181,13 +184,10 @@ const scrollToSection = (sectionId) => {
           <img
             :src="section.image"
             :alt="section.title"
-            class="w-full h-52 max-w-md bg-blue-300 rounded-lg shadow-md"
+            class="w-full h-auto max-w-md bg-blue-300 rounded-lg shadow-md"
           />
 
-          <p
-            class="text-xl tracking-wide leading-10"
-            v-html="section.description"
-          ></p>
+          <p class="tracking-wide leading-8" v-html="section.description"></p>
         </section>
       </div>
     </div>

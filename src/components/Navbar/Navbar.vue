@@ -48,13 +48,13 @@ onUnmounted(() => {
       <div
         ref="menuRef"
         v-if="isMenuOpen"
-        class="absolute top-full w-full shadow-md rounded-md py-10 px-5 flex flex-col gap-4 bg-blue-100 md:w-1/3 md:right-4 lg:w-80 z-0"
+        class="absolute top-full w-full shadow-md rounded-md p-5 flex flex-col gap-4 bg-blue-100 md:w-1/3 md:right-4 lg:w-80 z-0"
       >
         <RouterLink @click="closeMenu" to="/">
-          <p class="text-2xl menu-list rounded-md p-3 md:text-xl">首頁</p>
+          <p class="menu-list rounded-md p-2 md:text-xl">首頁</p>
         </RouterLink>
 
-        <ul class="text-2xl flex flex-col gap-2 md:text-xl">
+        <ul class="flex flex-col gap-2 md:text-xl">
           <div class="w-full flex items-center">
             <div class="flex-grow border border-blue-300"></div>
             <p class="mx-5">專案と作品集</p>
@@ -68,7 +68,7 @@ onUnmounted(() => {
           </RouterLink>
         </ul>
 
-        <ul class="text-2xl flex flex-col gap-2 md:text-xl">
+        <ul class="flex flex-col gap-2 md:text-xl">
           <div class="w-full flex items-center">
             <div class="flex-grow border border-blue-300"></div>
             <p class="mx-5">關於我</p>

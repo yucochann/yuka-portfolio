@@ -18,19 +18,19 @@
       </svg>
     </div>
     <div class="w-full flex flex-col gap-10">
-      <p class="text-4xl tracking-wider font-semibold lg:text-center">
+      <p class="text-3xl tracking-wider font-semibold lg:text-center">
         <span class="highlight">專案</span> と
         <span class="highlight">作品集</span>
       </p>
       <div class="w-full flex flex-col gap-5">
         <p class="text-with-rect">
-          <span class="opacity-70 font-semibold tracking-wider text-3xl"
+          <span class="opacity-70 font-semibold tracking-wider text-2xl"
             >Joitogether</span
           >
         </p>
         <div class="flex flex-col md:flex-row gap-5">
           <div
-            class="w-full h-52 bg-blue-300 rounded-md overflow-hidden shadow-md md:w-1/2 lg:w-1/3"
+            class="w-full h-auto bg-blue-300 rounded-md overflow-hidden shadow-md md:w-1/2 lg:w-1/3"
           >
             <img
               src="https://i.imgur.com/xnnypcz.gif"
@@ -38,8 +38,12 @@
             />
           </div>
           <div class="flex flex-col gap-5 md:justify-between md:w-2/3">
-            <p class="text-md lg:text-xl lg:tracking-wider">
-              提供用戶發起和加入團體活動的功能。當使用者有興趣參與某項活動但無法找到夥伴時，可以在平台上開設揪團活動並與其他人組團。
+            <p>
+              •提供用戶<span class="underline-wave">發起和加入活動</span
+              >的揪團網站。
+            </p>
+            <p>
+              •當使用者想找點事情打發時間但朋友都在忙，或者是沒有朋友的情況下，可以利用平台開設揪團活動並與其他人組團出遊或是聚餐，也可在此平台上認識志同道合的朋友！
             </p>
             <RouterLink to="/project/joitogether">
               <button class="w-1/3 h-10 bg-button rounded-md text-white">
@@ -51,7 +55,7 @@
       </div>
       <div class="w-full flex flex-col gap-5">
         <p class="text-with-rect">
-          <span class="opacity-70 font-semibold tracking-wider text-3xl"
+          <span class="opacity-70 font-semibold tracking-wider text-2xl"
             >設計作品集ー畫說</span
           >
         </p>
