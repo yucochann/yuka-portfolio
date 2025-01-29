@@ -6,14 +6,14 @@ import ProjectGallery from '@/views/ProjectGallery/ProjectGallery.vue';
 
 <template>
   <div
-    class="w-full flex flex-col gap-20 px-5 pb-10 md:px-10 lg:w-4/5 lg:mx-auto lg:px-0 max-w-[1000px]"
+    class="w-full flex flex-col gap-20 px-5 pb-10 md:px-10 lg:w-3/5 lg:mx-auto lg:px-0 max-w-[1000px]"
   >
     <section
       class="w-full h-[480px] flex flex-col justify-between lg:flex-row lg:items-center lg:h-auto"
     >
       <div class="w-full">
-        <p class="text-4xl tracking-wider font-semibold">HELLO ー !</p>
-        <p class="text-5xl tracking-wider font-semibold mt-2">
+        <p class="text-4xl tracking-wider font-bold">HELLO ー !</p>
+        <p class="text-5xl tracking-wider font-bold mt-2">
           我是
           <span class="highlight">YUKA</span>！
         </p>

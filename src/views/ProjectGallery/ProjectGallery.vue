@@ -30,23 +30,33 @@
         </p>
         <div class="flex flex-col md:flex-row gap-5">
           <div
-            class="w-full h-auto bg-blue-300 rounded-md overflow-hidden shadow-md md:w-1/2 lg:w-1/3"
+            class="w-full h-auto rounded-md overflow-hidden shadow-md md:w-1/2 md:aspect-w-21 md:aspect-h-9"
           >
             <img
-              src="https://i.imgur.com/xnnypcz.gif"
+              src="https://i.imgur.com/NIordW3.gif"
               class="w-full h-full object-cover"
             />
           </div>
-          <div class="flex flex-col gap-5 md:justify-between md:w-2/3">
-            <p>
-              •提供用戶<span class="underline-wave">發起和加入活動</span
-              >的揪團網站。
-            </p>
-            <p>
-              •當使用者想找點事情打發時間但朋友都在忙，或者是沒有朋友的情況下，可以利用平台開設揪團活動並與其他人組團出遊或是聚餐，也可在此平台上認識志同道合的朋友！
-            </p>
-            <RouterLink to="/project/joitogether">
-              <button class="w-1/3 h-10 bg-button rounded-md text-white">
+          <div class="md:w-1/2 flex flex-col gap-5 md:justify-between">
+            <div class="leading-8 tracking-wide flex flex-col">
+              <ul class="list-disc pl-5">
+                <li style="list-style: disc !important" class="mb-2">
+                  提供用戶<span class="underline-wave">發起和加入活動</span
+                  >的揪團網站。
+                </li>
+                <li style="list-style: disc !important" class="mb-2">
+                  前端使用<span class="underline-wave"
+                    >Vue.js 實現動態頁面</span
+                  >
+                  ，並利用<span class="underline-wave"
+                    >JavaScript 完成互動</span
+                  >
+                  功能，提升使用者體驗。
+                </li>
+              </ul>
+            </div>
+            <RouterLink to="/project/joitogether" class="w-1/3 h-10">
+              <button class="w-full h-full bg-button rounded-md text-white">
                 瞭解更多
               </button>
             </RouterLink>
@@ -55,23 +65,32 @@
       </div>
       <div class="w-full flex flex-col gap-5">
         <p class="text-with-rect">
-          <span class="opacity-70 font-semibold tracking-wider text-2xl"
-            >設計作品集ー畫說</span
-          >
+          <span class="opacity-70 font-semibold tracking-wider text-2xl">
+            設計作品集ー畫說
+          </span>
         </p>
         <div class="flex flex-col md:flex-row gap-5">
           <div
-            class="w-full h-56 bg-blue-300 rounded-md md:w-1/2 lg:w-1/3"
-          ></div>
-          <div class="flex flex-col gap-5 md:justify-between md:w-2/3">
-            <p class="text-md lg:text-xl lg:tracking-wider">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates atque incidunt cupiditate? Impedit placeat amet
-              adipisci itaque a neque nesciunt quibusdam, magnam obcaecati,
-              expedita unde dolore. Eveniet dolorum tenetur incidunt.
-            </p>
-            <RouterLink to="/project/picturing">
-              <button class="w-1/3 h-10 bg-button rounded-md text-white">
+            class="w-full h-auto rounded-md overflow-hidden shadow-md md:w-1/2 md:aspect-w-21 md:aspect-h-9"
+          >
+            <img
+              src="https://i.imgur.com/HQT9Wgs.gif"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="md:w-1/2 flex flex-col gap-5 md:justify-between">
+            <div class="leading-8 tracking-wide flex flex-col">
+              <p class="">
+                因為一開始喜歡畫畫，而將作品集名字取為<span
+                  class="underline-wave"
+                  >畫說</span
+                >，希望能<span class="underline-wave">透過自己的畫</span
+                >向大家傳達想法。<br />
+                而後開始踏入設計，也將自己的畫作與想法融入設計中，讓畫說能夠持續更新，朝著自己喜歡的方向繼續更新下去。
+              </p>
+            </div>
+            <RouterLink to="/project/picturing" class="w-1/3 h-10">
+              <button class="w-full h-full bg-button rounded-md text-white">
                 瞭解更多
               </button>
             </RouterLink>

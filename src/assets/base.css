@@ -29,6 +29,16 @@ body {
   src:
     url('../assets/fonts/xk3a9.woff2') format('woff2'),
     url('../assets/fonts/xk3a9.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: BoldFont;
+  src:
+    url('../assets//fonts/as8gb.woff2') format('woff2'),
+    url('../assets//fonts/as8gb.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @layer base {

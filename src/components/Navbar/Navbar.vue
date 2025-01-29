@@ -5,6 +5,14 @@ import { RouterLink } from 'vue-router';
 const isMenuOpen = ref(false);
 const menuRef = ref(null);
 
+const beforeEnter = () => {
+  isMenuOpen.value = true;
+};
+
+const afterLeave = () => {
+  isMenuOpen.value = false;
+};
+
 const toggleMenu = (event) => {
   isMenuOpen.value = !isMenuOpen.value;
   event.stopPropagation();
