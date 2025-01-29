@@ -89,12 +89,12 @@ onUnmounted(() => {
               yukaについて
             </li>
           </RouterLink>
-          <RouterLink @click="closeMenu" to="/">
+          <!-- <RouterLink @click="closeMenu" to="/">
             <li class="w-full menu-list rounded-md p-3">Ｑ＆Ａ</li>
           </RouterLink>
           <RouterLink @click="closeMenu" to="/">
             <li class="menu-list w-full rounded-md p-3">擅長工具</li>
-          </RouterLink>
+          </RouterLink> -->
         </ul>
       </div>
     </transition>

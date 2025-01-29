@@ -24,14 +24,29 @@ import { RouterLink } from 'vue-router';
       </p>
       <div class="w-full flex flex-col gap-5 md:flex-row-reverse">
         <div class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"></div>
-        <div class="flex gap-5 flex-col md:justify-between md:w-1/2">
+        <div class="flex gap-5 flex-col leading-8 md:justify-between md:w-1/2">
           <p>
-            吃飯所觀察有的弟弟笑出沒有什，而且還最常麼了有想，導也是了因這樣的，雖然都⋯望大家好意思一套成的影片的，的部分之後會。
-            <br />
-            <br />
-            應該是因為這真的三該：謝好像並不術，會比較不我可能的關係或，內容前面的自己的但他，巴靠近，沒必要可以先⋯兩種修以個現利智障也不到到他們，哦哦美國可愛認真看但他，天都完全沒的話會。剩下的講能，實的怎麼可為他了還是有我自己。
-            是看到日快樂分開也知道想想，甜的。充認親卡，一覺哈為有有其這麼大⋯有出我真的就的東西，他的手去看認親卡有拍明天，都是，但又都不一我想。
+            我是 Yuka，具<span class="underline-wave">視覺傳達設計背景</span
+            >，擁有多年的平面設計經驗，擅長視覺規劃。
           </p>
+          <p>
+            為了<span class="underline-wave"
+              >結合設計與技術，轉職為前端工程師</span
+            >
+            ，熟悉網頁切版與 Vue.js 框架，並於培訓期間與團隊開發揪團網站。
+          </p>
+          <p>
+            曾赴日學習日語，並在日本打工度假一年，培養<span
+              class="underline-wave"
+              >日文溝通能力</span
+            >與<span class="underline-wave">跨文化團隊合作經驗</span>。
+          </p>
+          <p>
+            未來目標是<span class="underline-wave"
+              >持續精進前端技術，拓展全端開發能力</span
+            >，同時深化日語與設計專業，打造更具價值的網站與數位產品。
+          </p>
+
           <router-link to="/about">
             <button class="w-1/3 h-10 bg-button rounded-md text-white">
               瞭解更多
