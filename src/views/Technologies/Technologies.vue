@@ -1,7 +1,19 @@
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+onMounted(() => {
+  Aos.init();
+});
+</script>
 
 <template>
-  <section class="w-full flex flex-col gap-10">
+  <section
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    class="w-full flex flex-col gap-10"
+  >
     <div class="lg:flex lg:justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,26 +31,28 @@
     </div>
 
     <div class="w-full flex flex-col gap-10">
-      <p class="text-4xl tracking-wider font-semibold lg:text-center">
+      <p class="text-3xl tracking-wider font-semibold lg:text-center">
         擅長 の
         <span class="highlight">工具</span>
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           class="w-full flex flex-col gap-5 md:bg-white md:bg-opacity-30 md:p-5 md:rounded-md"
         >
           <p class="text-with-rect">
-            <span class="opacity-70 font-semibold tracking-wider text-3xl"
+            <span class="opacity-70 font-semibold tracking-wider text-2xl"
               >前端</span
             >
           </p>
-          <p class="text-xl leading-9">
+          <p class="leading-8">
             能夠純手刻網頁並 <span class="underline-wave">實作佈局</span>、<span
               class="underline-wave"
               >事件處理</span
             >、與 <span class="underline-wave">後端 API 串接</span>。
           </p>
-          <ul class="list-disc list-inside space-y-2 text-xl">
+          <ul class="list-disc list-inside space-y-1">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -50,17 +64,19 @@
           </ul>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           class="w-full flex flex-col gap-5 md:bg-white md:bg-opacity-30 md:p-5 md:rounded-md"
         >
           <p class="text-with-rect">
-            <span class="opacity-70 font-semibold tracking-wider text-3xl"
+            <span class="opacity-70 font-semibold tracking-wider text-2xl"
               >後端</span
             >
           </p>
-          <p class="text-xl">
+          <p class="">
             <span class="underline-wave">略懂後端操作</span> 等相關知識。
           </p>
-          <ul class="list-disc list-inside space-y-2 text-xl">
+          <ul class="list-disc list-inside space-y-1">
             <li>Node.js</li>
             <li>Express</li>
             <li>Prisma</li>
@@ -69,29 +85,33 @@
           </ul>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           class="w-full flex flex-col gap-5 md:bg-white md:bg-opacity-30 md:p-5 md:rounded-md"
         >
           <p class="text-with-rect">
-            <span class="opacity-70 font-semibold tracking-wider text-3xl"
+            <span class="opacity-70 font-semibold tracking-wider text-2xl"
               >工具與平台技能</span
             >
           </p>
-          <p class="text-xl">專案中使用的工具</p>
-          <ul class="list-disc list-inside space-y-2 text-xl">
+          <p class="">專案中使用的工具</p>
+          <ul class="list-disc list-inside space-y-1">
             <li>Git</li>
             <li>GitHub</li>
             <li>Railway</li>
           </ul>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           class="w-full flex flex-col gap-5 md:bg-white md:bg-opacity-30 md:p-5 md:rounded-md"
         >
           <p class="text-with-rect">
-            <span class="opacity-70 font-semibold tracking-wider text-3xl"
+            <span class="opacity-70 font-semibold tracking-wider text-2xl"
               >設計相關技能</span
             >
           </p>
-          <ul class="list-disc list-inside space-y-2 text-xl">
+          <ul class="list-disc list-inside space-y-1">
             <li>Illustrator</li>
             <li>Photoshop</li>
             <li>CIS 企業識別系統</li>

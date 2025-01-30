@@ -1,8 +1,19 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  Aos.init();
+});
 </script>
 <template>
-  <section class="w-full flex flex-col gap-10">
+  <section
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    class="w-full flex flex-col gap-10"
+  >
     <div class="lg:flex lg:justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +30,7 @@ import { RouterLink } from 'vue-router';
       </svg>
     </div>
     <div class="w-full flex flex-col gap-8">
-      <p class="text-4xl tracking-wider font-semibold lg:text-center">
+      <p class="text-3xl tracking-wider font-semibold lg:text-center">
         <span class="highlight">YUKA</span> について
       </p>
       <div class="w-full flex flex-col gap-5 md:flex-row-reverse">

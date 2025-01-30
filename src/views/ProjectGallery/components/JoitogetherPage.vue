@@ -1,5 +1,7 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // 功能按鈕與對應目標區塊
 const items = ref([
@@ -92,6 +94,11 @@ onMounted(() => {
   window.scrollTo({
     top: 0,
   });
+  AOS.init();
+});
+
+watch(sections, () => {
+  AOS.refresh();
 });
 </script>
 <template>
@@ -189,6 +196,8 @@ onMounted(() => {
           :key="section.id"
           :id="section.id"
           class="h-auto flex flex-col lg:flex-row lg:gap-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <!-- 圖片區塊 -->
           <img

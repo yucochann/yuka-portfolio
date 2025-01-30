@@ -1,7 +1,47 @@
-<script setup></script>
+<script setup>
+import { onMounted, ref, watch } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const projects = ref([
+  {
+    title: 'Joitogether',
+    description: [
+      "提供用戶<span class='underline-wave'>發起和加入活動</span>的揪團網站。",
+      "前端使用<span class='underline-wave'>Vue.js 實現動態頁面</span>，並利用<span class='underline-wave'>JavaScript 完成互動</span>功能，提升使用者體驗。",
+    ],
+    image: 'https://i.imgur.com/NIordW3.gif',
+    link: '/project/joitogether',
+  },
+  {
+    title: '設計作品集ー畫說',
+    description: `
+  <p>最初喜歡畫畫，而將作品集名字取為
+    <span class="underline-wave">畫說</span>，希望能
+    <span class="underline-wave">透過自己的畫向大家傳達想法</span>。</p>
+  <p>而後開始踏入設計，也將自己的畫作與想法融入設計中，
+    讓畫說能夠持續更新，朝著自己喜歡的方向繼續更新下去。</p>
+`,
+    image: 'https://i.imgur.com/HQT9Wgs.gif',
+    link: '/project/picturing',
+  },
+]);
+
+onMounted(() => {
+  AOS.init();
+});
+
+watch(projects, () => {
+  AOS.refresh();
+});
+</script>
 
 <template>
-  <section class="w-full flex flex-col gap-10">
+  <section
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    class="w-full flex flex-col gap-10"
+  >
     <div class="lg:flex lg:justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +62,49 @@
         <span class="highlight">專案</span> と
         <span class="highlight">作品集</span>
       </p>
-      <div class="w-full flex flex-col gap-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        v-for="(project, index) in projects"
+        :key="index"
+        class="w-full flex flex-col gap-5"
+      >
+        <p class="text-with-rect">
+          <span class="opacity-70 font-semibold tracking-wider text-2xl">
+            {{ project.title }}
+          </span>
+        </p>
+        <div class="flex flex-col md:flex-row gap-5">
+          <div
+            class="w-full h-auto rounded-md overflow-hidden shadow-md md:w-1/2 md:aspect-w-21 md:aspect-h-9"
+          >
+            <img :src="project.image" class="w-full h-full object-cover" />
+          </div>
+          <div class="md:w-1/2 flex flex-col gap-5 md:justify-between">
+            <div class="leading-8 tracking-wide flex flex-col">
+              <ul
+                v-if="Array.isArray(project.description)"
+                class="list-disc pl-5"
+              >
+                <li
+                  v-for="(desc, i) in project.description"
+                  :key="i"
+                  style="list-style: disc !important"
+                  class="mb-2"
+                  v-html="desc"
+                ></li>
+              </ul>
+              <p v-else v-html="project.description"></p>
+            </div>
+            <RouterLink :to="project.link" class="w-1/3 h-10">
+              <button class="w-full h-full bg-button rounded-md text-white">
+                瞭解更多
+              </button>
+            </RouterLink>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="w-full flex flex-col gap-5">
         <p class="text-with-rect">
           <span class="opacity-70 font-semibold tracking-wider text-2xl"
             >Joitogether</span
@@ -96,7 +178,7 @@
             </RouterLink>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

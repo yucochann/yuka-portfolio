@@ -2,7 +2,7 @@
 
 <template>
   <footer
-    class="w-full px-5 py-5 flex flex-col justify-center items-center gap-3"
+    class="w-full px-5 py-5 flex flex-col justify-center items-center gap-3 md:px-10 lg:w-3/5 lg:mx-auto lg:px-0"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

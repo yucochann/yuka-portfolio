@@ -1,5 +1,7 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const sections = ref([
   {
@@ -33,6 +35,17 @@ const sections = ref([
       '於 2019 年赴北海道語言學校學習日文半年，並於 2023 年前往東京打工度假，增進日語能力及跨文化溝通經驗，具備商業日語初級口說能力，<span class="underline-wave">能適應多元文化環境並建立良好協作關係</span>。',
   },
 ]);
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+  });
+  AOS.init();
+});
+
+watch(sections, () => {
+  AOS.refresh();
+});
 </script>
 
 <template>
@@ -47,6 +60,8 @@ const sections = ref([
         <div class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"></div>
         <div class="md:w-1/2 flex flex-col gap-5">
           <section
+            data-aos="fade-up"
+            data-aos-duration="1000"
             v-for="section in sections"
             :key="section.id"
             :id="section.id"
@@ -63,8 +78,16 @@ const sections = ref([
       </div>
     </div>
     <div class="w-full flex flex-col gap-5 md:flex-row-reverse">
-      <div class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"></div>
-      <div class="flex flex-col gap-3 md:w-1/2">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"
+      ></div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="flex flex-col gap-3 md:w-1/2"
+      >
         <p class="text-with-rect">
           <span class="opacity-70 font-semibold tracking-wider text-2xl">
             未來期許
