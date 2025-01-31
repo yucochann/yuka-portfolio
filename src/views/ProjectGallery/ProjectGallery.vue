@@ -10,7 +10,7 @@ const projects = ref([
       "提供用戶<span class='underline-wave'>發起和加入活動</span>的揪團網站。",
       "前端使用<span class='underline-wave'>Vue.js 實現動態頁面</span>，並利用<span class='underline-wave'>JavaScript 完成互動</span>功能，提升使用者體驗。",
     ],
-    image: 'https://i.imgur.com/NIordW3.gif',
+    image: 'https://i.imgur.com/gPdXzlk.png',
     link: '/project/joitogether',
   },
   {
@@ -22,7 +22,7 @@ const projects = ref([
   <p>而後開始踏入設計，也將自己的畫作與想法融入設計中，
     讓畫說能夠持續更新，朝著自己喜歡的方向繼續更新下去。</p>
 `,
-    image: 'https://i.imgur.com/HQT9Wgs.gif',
+    image: 'https://i.imgur.com/ZMZwGI1.png',
     link: '/project/picturing',
   },
 ]);

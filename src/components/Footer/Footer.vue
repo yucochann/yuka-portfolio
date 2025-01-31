@@ -24,7 +24,9 @@
         >フロントエンドのエンジニア</span
       >も好きな人々と繋がりたいです。
     </p>
-    <div class="w-20 h-20 bg-blue-300 rounded-md"></div>
+    <div class="w-20 h-20 rounded-md">
+      <img src="@/assets/image/logo.png" class="w-full h-full" />
+    </div>
     <p class="text-center">&copy; 2025 Yuka. All rights reserved.</p>
   </footer>
 </template>

@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#388bde',
+        'custom-blue': '#3983CD',
         button: {
-          default: '#388bde',
+          default: '#3983CD',
           hover: '#469cf1',
         },
       },

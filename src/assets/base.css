@@ -6,9 +6,9 @@
 }
 body {
   font-family: 'CustomFont', 'Noto Sans TC', sans-serif;
-  color: #388bde;
-  background-size: cover;
-  background-repeat: repeat-y;
+  color: #3983cd;
+  background-size: 50%;
+  /* background-repeat: repeat-y; */
   background-image: url(@/assets/image/background-image.jpg);
 }
 .highlight {

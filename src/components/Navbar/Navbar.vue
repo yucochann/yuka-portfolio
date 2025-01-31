@@ -39,12 +39,17 @@ onUnmounted(() => {
 
 <template>
   <div id="navbar">
-    <div class="w-full h-20 flex items-center justify-end pr-3 relative z-10">
+    <div class="w-full h-28 flex items-center justify-end pr-3 relative z-10">
       <div
         @click="toggleMenu"
-        class="cursor-pointer w-16 h-20 bg-blue-300 flex flex-col justify-end"
+        class="cursor-pointer w-24 h-20 flex flex-col items-center"
       >
-        <p class="text-sm text-white">メニュー</p>
+        <img
+          src="@/assets/image/logo.png"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+        <p class="text-sm font-bold">MENU</p>
       </div>
     </div>
 
@@ -56,7 +61,7 @@ onUnmounted(() => {
       <div
         ref="menuRef"
         v-if="isMenuOpen"
-        class="absolute top-full w-full shadow-md rounded-md p-5 flex flex-col gap-4 bg-blue-100 md:w-1/3 md:right-4 lg:w-80 z-0"
+        class="menu-bg absolute top-full w-full shadow-md rounded-md p-5 flex flex-col gap-4 md:w-1/3 md:right-4 lg:w-80 z-0"
       >
         <RouterLink @click="closeMenu" to="/">
           <p class="menu-list rounded-md p-2 md:text-xl">首頁</p>
@@ -102,6 +107,10 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+.menu-bg {
+  background-image: url('@/assets/image/background-image.jpg');
+}
+
 .menu-list:hover {
   background-color: #94c5fd;
   color: #fff;
