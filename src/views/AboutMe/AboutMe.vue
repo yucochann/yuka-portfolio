@@ -31,10 +31,16 @@ onMounted(() => {
     </div>
     <div class="w-full flex flex-col gap-8">
       <p class="text-3xl tracking-wider font-semibold lg:text-center">
-        <span class="highlight">YUKA</span> について
+        關於 <span class="highlight">YUKA</span>
       </p>
       <div class="w-full flex flex-col gap-5 md:flex-row-reverse">
-        <div class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"></div>
+        <div class="w-full h-[450px] rounded-md md:w-1/2">
+          <img
+            src="https://i.imgur.com/cs5DDlE.gif"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
         <div class="flex gap-5 flex-col leading-8 md:justify-between md:w-1/2">
           <p>
             我是 Yuka，具<span class="underline-wave">視覺傳達設計背景</span

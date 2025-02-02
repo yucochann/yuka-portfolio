@@ -59,7 +59,7 @@ watch(projects, () => {
     </div>
     <div class="w-full flex flex-col gap-10">
       <p class="text-3xl tracking-wider font-semibold lg:text-center">
-        <span class="highlight">專案</span> と
+        <span class="highlight">專案</span> ＆
         <span class="highlight">作品集</span>
       </p>
       <div

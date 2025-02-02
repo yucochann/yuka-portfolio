@@ -18,7 +18,7 @@
       ></path>
     </svg>
 
-    <p class="leading-7">
+    <p class="text-sm leading-7">
       <span class="underline-wave">デザイン</span>が好きで、<span
         class="underline-wave"
         >フロントエンドのエンジニア</span
@@ -27,7 +27,9 @@
     <div class="w-20 h-20 rounded-md">
       <img src="@/assets/image/logo.png" class="w-full h-full" />
     </div>
-    <p class="text-center">&copy; 2025 Yuka. All rights reserved.</p>
+    <p class="text-sm text-center">
+      &copy; 2025 Yuka. Debugging life, one line at a time.
+    </p>
   </footer>
 </template>
 

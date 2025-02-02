@@ -39,16 +39,21 @@ onUnmounted(() => {
 
 <template>
   <div id="navbar">
-    <div class="w-full h-28 flex items-center justify-end pr-3 relative z-10">
+    <div
+      class="w-full h-28 flex items-center justify-end pr-3 overflow-hidden relative z-10"
+    >
       <div
         @click="toggleMenu"
         class="cursor-pointer w-24 h-20 flex flex-col items-center"
       >
-        <img
-          src="@/assets/image/logo.png"
-          alt=""
-          class="w-full h-full object-cover"
-        />
+        <div class="w-[5em] h-[4em]">
+          <img
+            src="@/assets/image/logo.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+
         <p class="text-sm font-bold">MENU</p>
       </div>
     </div>
@@ -70,14 +75,14 @@ onUnmounted(() => {
         <ul class="flex flex-col gap-2 md:text-xl">
           <div class="w-full flex items-center">
             <div class="flex-grow border border-blue-300"></div>
-            <p class="mx-5">專案と作品集</p>
+            <p class="mx-5">專案 ＆ 作品集</p>
             <div class="flex-grow border border-blue-300"></div>
           </div>
           <RouterLink @click="closeMenu" to="/project/joitogether">
             <li class="w-full menu-list rounded-md p-3">Joitogether</li>
           </RouterLink>
           <RouterLink @click="closeMenu" to="/project/picturing">
-            <li class="w-full menu-list rounded-md p-3">作品集</li>
+            <li class="w-full menu-list rounded-md p-3">設計作品集ー畫說</li>
           </RouterLink>
         </ul>
 
@@ -91,7 +96,7 @@ onUnmounted(() => {
             <li
               class="w-full hover:bg-blue-300 hover:text-white transition-all duration-300 ease-in-out rounded-md p-3"
             >
-              yukaについて
+              關於 YUKA
             </li>
           </RouterLink>
           <!-- <RouterLink @click="closeMenu" to="/">
@@ -107,6 +112,11 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+.navbar-bg {
+  background-image: url('@/assets/image/background-image.jpg');
+  background-size: 30%;
+}
+
 .menu-bg {
   background-image: url('@/assets/image/background-image.jpg');
 }

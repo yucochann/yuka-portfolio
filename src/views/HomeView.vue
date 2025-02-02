@@ -1,7 +1,14 @@
 <script setup>
+import { onMounted } from 'vue';
 import Technologies from '@/views/Technologies/Technologies.vue';
 import AboutMe from '@/views/AboutMe/AboutMe.vue';
 import ProjectGallery from '@/views/ProjectGallery/ProjectGallery.vue';
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+  });
+});
 </script>
 
 <template>

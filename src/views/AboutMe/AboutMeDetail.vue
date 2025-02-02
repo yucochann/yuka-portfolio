@@ -32,7 +32,7 @@ const sections = ref([
     id: 5,
     title: '跨文化適應力',
     description:
-      '於 2019 年赴北海道語言學校學習日文半年，並於 2023 年前往東京打工度假，增進日語能力及跨文化溝通經驗，具備商業日語初級口說能力，<span class="underline-wave">能適應多元文化環境並建立良好協作關係</span>。',
+      '於 2019 年赴北海道語言學校學習日文，並於 2023 年前往東京打工度假，增進日語能力及跨文化溝通經驗，具備商業日語初級口說能力，<span class="underline-wave">能適應多元文化環境並建立良好協作關係</span>。',
   },
 ]);
 
@@ -54,10 +54,16 @@ watch(sections, () => {
   >
     <div class="w-full flex flex-col gap-10">
       <p class="text-4xl tracking-wider font-semibold text-center">
-        YUKAについて
+        關於 <span class="highlight">YUKA</span>
       </p>
       <div class="flex flex-col gap-5 md:flex-row">
-        <div class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"></div>
+        <div class="w-full h-[450px] overflow-hidden rounded-md md:w-1/2">
+          <img
+            src="https://i.imgur.com/cs5DDlE.gif"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
         <div class="md:w-1/2 flex flex-col gap-5">
           <section
             data-aos="fade-up"
@@ -77,16 +83,22 @@ watch(sections, () => {
         </div>
       </div>
     </div>
-    <div class="w-full flex flex-col gap-5 md:flex-row-reverse">
+    <div class="w-full flex flex-col gap-5 md:flex-row-reverse md:items-center">
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
-        class="w-full h-[450px] bg-blue-300 rounded-md md:w-1/2"
-      ></div>
+        class="w-full h-auto overflow-hidden rounded-md md:w-1/3"
+      >
+        <img
+          src="https://i.imgur.com/wqVxGAR.gif"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
-        class="flex flex-col gap-3 md:w-1/2"
+        class="flex flex-col gap-3 md:w-2/3"
       >
         <p class="text-with-rect">
           <span class="opacity-70 font-semibold tracking-wider text-2xl">

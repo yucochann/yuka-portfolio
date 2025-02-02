@@ -32,7 +32,7 @@ onMounted(() => {
 
     <div class="w-full flex flex-col gap-10">
       <p class="text-3xl tracking-wider font-semibold lg:text-center">
-        擅長 の
+        擅長的
         <span class="highlight">工具</span>
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
