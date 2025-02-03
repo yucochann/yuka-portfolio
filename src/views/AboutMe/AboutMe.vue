@@ -34,7 +34,7 @@ onMounted(() => {
         關於 <span class="highlight">YUKA</span>
       </p>
       <div class="w-full flex flex-col gap-5 md:flex-row-reverse">
-        <div class="w-full h-[450px] rounded-md md:w-1/2">
+        <div class="w-full h-auto overflow-hidden rounded-md md:w-1/2">
           <img
             src="https://i.imgur.com/cs5DDlE.gif"
             alt=""
